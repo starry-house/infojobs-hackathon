@@ -1,4 +1,4 @@
-import { Container, Text, Flex, Stack } from "@chakra-ui/react";
+import { Container, Text, Flex, Stack } from '@chakra-ui/react'
 
 const Home = () => (
   <Flex as="main" alignItems="center" minHeight="100vh">
@@ -18,6 +18,6 @@ const Home = () => (
       </Stack>
     </Container>
   </Flex>
-);
+)
 
-export default Home;
+export default Home

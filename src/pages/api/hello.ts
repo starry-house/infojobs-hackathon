@@ -1,11 +1,11 @@
-import { NextApiHandler } from "next";
+import { NextApiHandler } from 'next'
 
 type Data = {
-  name: string;
-};
+  name: string
+}
 
 const handler: NextApiHandler<Data> = (_, res) => {
-  res.status(200).json({ name: "John Doe" });
-};
+  res.status(200).json({ name: 'John Doe' })
+}
 
-export default handler;
+export default handler
