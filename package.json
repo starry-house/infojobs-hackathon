@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "format": "prettier --write --cache ."
+    "format": "prettier --write --cache .",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@chakra-ui/react": "2.6.1",
@@ -25,7 +26,12 @@
     "typescript": "5.0.4"
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "5.59.6",
+    "@typescript-eslint/parser": "5.59.6",
     "eslint-config-prettier": "8.8.0",
+    "eslint-plugin-react": "7.32.2",
+    "husky": "8.0.3",
+    "lint-staged": "13.2.2",
     "prettier": "2.8.8"
   }
 }
