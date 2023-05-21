@@ -1,4 +1,4 @@
-# Project Title
+# Infojobs
 
 One Paragraph of the project description
 
@@ -24,7 +24,7 @@ First, make sure that all the necessary dependencies are installed in your local
 npm install
 ```
 
-#### Configurar Ngrok
+#### Configure Ngrok
 
 To perform tests and allow users to authenticate in the application, we need to expose our local Next.js application. This can be done using Ngrok.
 
