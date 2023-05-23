@@ -1,5 +1,6 @@
 import { IApplication } from '@/types/application'
 import { Box, VStack } from '@chakra-ui/react'
+import { useRouter } from 'next/router'
 import { FC } from 'react'
 import { ApplicationCard } from './application-card'
 
@@ -10,8 +11,9 @@ export type ApplicationListProps = {
 export const ApplicationList: FC<ApplicationListProps> = ({
   applicationList,
 }) => {
-  const handleOnClick = (index: number) => {
-    console.log(index)
+  const router = useRouter()
+  const handleOnClick = (code: string) => {
+    router.push(`/applications/${code}`)
   }
 
   return (
@@ -25,7 +27,7 @@ export const ApplicationList: FC<ApplicationListProps> = ({
           <ApplicationCard
             key={index}
             application={application}
-            onClick={() => handleOnClick(index)}
+            onClick={() => handleOnClick(application.code)}
           />
         ))}
       </Box>
