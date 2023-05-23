@@ -17,3 +17,12 @@ export type IApplication = {
   processClosedEvent?: ITimeLineEvent
   cvReceivedEvent: ITimeLineEvent
 }
+
+export type IApplicationExtended = IApplication & {
+  steps: {
+    current: boolean
+    title: string
+    subtitle: string
+    description: string
+  }[]
+}
