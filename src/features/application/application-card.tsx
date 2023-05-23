@@ -19,6 +19,7 @@ export const ApplicationCard: FC<ApplicationCardProps> = ({
       onClick={onClick}
       cursor="pointer"
       borderRadius="md"
+      margin="1rem"
       _hover={{
         bg: 'gray.200',
         boxShadow: 'lg',
