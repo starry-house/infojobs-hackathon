@@ -1,0 +1,178 @@
+import { IApplication } from '@/types/application'
+
+const applications: IApplication[] = [
+  {
+    hasCoverLetter: false,
+    stepLabel: '2/7',
+    cv: 'Jose',
+    code: '25e51c3e-95b3-40be-8391-2df326c6fxxx',
+    date: '2020-05-22T10:30:48.000+0000',
+    rejected: false,
+    offerRemoved: false,
+    processClosed: false,
+    jobOffer: {
+      title: 'Ingeriero de Software con Ruso',
+      company: 'Ingeniería Fernández',
+      city: 'Terradillos De Esgueva',
+      code: '793313858f4fcaac90e5ac9622cxxx',
+      applications: 2,
+      province: {
+        id: 10,
+        value: 'Burgos',
+      },
+    },
+    cvReadEvent: {
+      date: '2020-09-10T07:49:21.000+0000',
+      description: 'La empresa ha leído tu CV ',
+      initializer: false,
+      finisher: false,
+      rejectedReasons: [],
+    },
+    cvReceivedEvent: {
+      date: '2020-05-22T10:30:48.000+0000',
+      description: 'Te has inscrito en la oferta',
+      initializer: true,
+      finisher: false,
+      rejectedReasons: [],
+    },
+    inProcessEvent: {
+      date: '2020-05-22T10:33:31.000+0000',
+      description:
+        'La empresa ha incluido tu candidatura entre las que siguen en el proceso',
+      initializer: false,
+      finisher: false,
+      rejectedReasons: [],
+    },
+  },
+  {
+    hasCoverLetter: false,
+    cv: 'Jose',
+    stepLabel: '2/7',
+    code: '25e51c3e-95b3-40be-8391-2df326c6fxxx',
+    date: '2020-05-22T10:30:48.000+0000',
+    rejected: false,
+    offerRemoved: false,
+    processClosed: false,
+    jobOffer: {
+      title: 'Ingeriero de Software con Ruso',
+      company: 'Ingeniería Fernández',
+      city: 'Terradillos De Esgueva',
+      code: '793313858f4fcaac90e5ac9622cxxx',
+      applications: 2,
+      province: {
+        id: 10,
+        value: 'Burgos',
+      },
+    },
+    cvReadEvent: {
+      date: '2020-09-10T07:49:21.000+0000',
+      description: 'La empresa ha leído tu CV ',
+      initializer: false,
+      finisher: false,
+      rejectedReasons: [],
+    },
+    cvReceivedEvent: {
+      date: '2020-05-22T10:30:48.000+0000',
+      description: 'Te has inscrito en la oferta',
+      initializer: true,
+      finisher: false,
+      rejectedReasons: [],
+    },
+    inProcessEvent: {
+      date: '2020-05-22T10:33:31.000+0000',
+      description:
+        'La empresa ha incluido tu candidatura entre las que siguen en el proceso',
+      initializer: false,
+      finisher: false,
+      rejectedReasons: [],
+    },
+  },
+  {
+    hasCoverLetter: false,
+    cv: 'Jose',
+    stepLabel: '2/7',
+    code: '25e51c3e-95b3-40be-8391-2df326c6fxxx',
+    date: '2020-05-22T10:30:48.000+0000',
+    rejected: false,
+    offerRemoved: false,
+    processClosed: false,
+    jobOffer: {
+      title: 'Ingeriero de Software con Ruso',
+      company: 'Ingeniería Fernández',
+      city: 'Terradillos De Esgueva',
+      code: '793313858f4fcaac90e5ac9622cxxx',
+      applications: 2,
+      province: {
+        id: 10,
+        value: 'Burgos',
+      },
+    },
+    cvReadEvent: {
+      date: '2020-09-10T07:49:21.000+0000',
+      description: 'La empresa ha leído tu CV ',
+      initializer: false,
+      finisher: false,
+      rejectedReasons: [],
+    },
+    cvReceivedEvent: {
+      date: '2020-05-22T10:30:48.000+0000',
+      description: 'Te has inscrito en la oferta',
+      initializer: true,
+      finisher: false,
+      rejectedReasons: [],
+    },
+    inProcessEvent: {
+      date: '2020-05-22T10:33:31.000+0000',
+      description:
+        'La empresa ha incluido tu candidatura entre las que siguen en el proceso',
+      initializer: false,
+      finisher: false,
+      rejectedReasons: [],
+    },
+  },
+  {
+    hasCoverLetter: false,
+    cv: 'Jose',
+    stepLabel: '2/7',
+    code: '25e51c3e-95b3-40be-8391-2df326c6fxxx',
+    date: '2020-05-22T10:30:48.000+0000',
+    rejected: false,
+    offerRemoved: false,
+    processClosed: false,
+    jobOffer: {
+      title: 'Ingeriero de Software con Ruso',
+      company: 'Ingeniería Fernández',
+      city: 'Terradillos De Esgueva',
+      code: '793313858f4fcaac90e5ac9622cxxx',
+      applications: 2,
+      province: {
+        id: 10,
+        value: 'Burgos',
+      },
+    },
+    cvReadEvent: {
+      date: '2020-09-10T07:49:21.000+0000',
+      description: 'La empresa ha leído tu CV ',
+      initializer: false,
+      finisher: false,
+      rejectedReasons: [],
+    },
+    cvReceivedEvent: {
+      date: '2020-05-22T10:30:48.000+0000',
+      description: 'Te has inscrito en la oferta',
+      initializer: true,
+      finisher: false,
+      rejectedReasons: [],
+    },
+    inProcessEvent: {
+      date: '2020-05-22T10:33:31.000+0000',
+      description:
+        'La empresa ha incluido tu candidatura entre las que siguen en el proceso',
+      initializer: false,
+      finisher: false,
+      rejectedReasons: [],
+    },
+  },
+]
+
+export { applications }
