@@ -1,5 +1,5 @@
 import { ApplicationList } from '@/features/application'
-import { applications } from '../mocks/applications.mock'
+import { applications } from '../../mocks/applications.mock'
 import { Container, Text, Flex, Stack } from '@chakra-ui/react'
 
 const Applications = () => {
