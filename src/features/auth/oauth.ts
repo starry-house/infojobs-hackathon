@@ -35,7 +35,7 @@ export const InfoJobs = (
     checks: ['state'],
     authorization: {
       url: `${issuer}/api/oauth/user-authorize/index.xhtml`,
-      params: { scope: 'CANDIDATE_PROFILE_WITH_EMAIL,CV' },
+      params: { scope: 'CANDIDATE_PROFILE_WITH_EMAIL,CV,MY_APPLICATIONS' },
     },
     token: {
       url: `${issuer}/oauth/authorize`,
