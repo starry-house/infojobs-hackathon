@@ -17,8 +17,8 @@ const handler: NextApiHandler = async (req, res) => {
   if (!session)
     return res.status(401).json({ error: { message: 'Unauthorized' } })
 
-  const applications = await requestApplications(session)
-  res.status(200).json(applications)
+  const data = await requestApplications(session)
+  res.status(200).json(data.applications)
 }
 
 export default handler

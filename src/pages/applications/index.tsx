@@ -1,8 +1,17 @@
 import { ApplicationList } from '@/features/application'
-import { applications } from '../../mocks/applications.mock'
 import { Container, Text, Flex, Stack } from '@chakra-ui/react'
+import { useQuery } from '@tanstack/react-query'
+
+import { IApplication } from '@/types/application'
 
 const Applications = () => {
+  const { data } = useQuery<IApplication[]>({
+    queryKey: ['todos'],
+    initialData: [],
+    queryFn: () =>
+      fetch('/api/applications').then((response) => response.json()),
+  })
+
   return (
     <Flex as="main" alignItems="center">
       <Container maxW="container.xl" centerContent>
@@ -16,7 +25,7 @@ const Applications = () => {
           >
             Applications
           </Text>
-          <ApplicationList applicationList={applications} />
+          <ApplicationList applicationList={data} />
         </Stack>
       </Container>
     </Flex>
