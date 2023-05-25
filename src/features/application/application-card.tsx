@@ -12,7 +12,7 @@ export const ApplicationCard: FC<ApplicationCardProps> = ({
   application,
   onClick,
 }) => {
-  const { jobOffer } = application
+  const jobOffer = application?.jobOffer
 
   return (
     <Box
@@ -29,17 +29,17 @@ export const ApplicationCard: FC<ApplicationCardProps> = ({
         <CardBody>
           <Stack divider={<StackDivider />} spacing="2">
             <Box>
-              <Heading size="md"> {jobOffer.title}</Heading>
+              <Heading size="md"> {jobOffer?.title}</Heading>
               <Text pt="1" fontSize="sm">
-                {jobOffer.company}
+                {jobOffer?.company}
               </Text>
             </Box>
             <Box>
               <Text pt="1" fontSize="sm">
-                {jobOffer.city}
+                {jobOffer?.city}
               </Text>
               <Heading size="xs" pt="3" textTransform="uppercase">
-                {application.stepLabel}
+                {application?.stepLabel}
               </Heading>
             </Box>
           </Stack>
