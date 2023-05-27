@@ -19,14 +19,14 @@ export const ApplicationCard: FC<ApplicationCardProps> = ({
       onClick={onClick}
       cursor="pointer"
       borderRadius="md"
-      margin="1rem"
-      width={600}
+      margin="1rem" 
+      width={300} 
       _hover={{
         bg: 'gray.200',
         boxShadow: 'lg',
       }}
     >
-      <Card>
+      <Card height="100%">
         <CardBody>
           <Stack divider={<StackDivider />} spacing="2">
             <Box>

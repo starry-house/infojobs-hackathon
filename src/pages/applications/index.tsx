@@ -26,7 +26,7 @@ const Applications = () => {
 
   return (
     <Flex as="main" alignItems="center">
-      <Container maxW="container.xl" centerContent>
+      <Container maxW="full" centerContent>
         <Stack spacing={2}>
           <Text
             fontSize="3xl"
