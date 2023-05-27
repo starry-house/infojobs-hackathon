@@ -20,6 +20,7 @@ export const ApplicationCard: FC<ApplicationCardProps> = ({
       cursor="pointer"
       borderRadius="md"
       margin="1rem"
+      width={600}
       _hover={{
         bg: 'gray.200',
         boxShadow: 'lg',

@@ -11,7 +11,7 @@ const applications: IApplication[] = [
     offerRemoved: false,
     processClosed: false,
     jobOffer: {
-      title: 'Ingeriero de Software con Ruso',
+      title: 'Mozo/a de almacén 15 horas/semana',
       company: 'Ingeniería Fernández',
       city: 'Terradillos De Esgueva',
       code: '793313858f4fcaac90e5ac9622cxxx',
@@ -54,7 +54,7 @@ const applications: IApplication[] = [
     offerRemoved: false,
     processClosed: false,
     jobOffer: {
-      title: 'Ingeriero de Software con Ruso',
+      title: 'Hackathon con Midudev',
       company: 'Ingeniería Fernández',
       city: 'Terradillos De Esgueva',
       code: '793313858f4fcaac90e5ac9622cxxx',
