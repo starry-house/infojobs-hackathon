@@ -14,7 +14,7 @@ import { applications } from '@/mocks/applications.mock'
 import { useMemo } from 'react'
 
 const Applications = () => {
-  const { data, error, isLoading } = useQuery<IApplication[]>({
+  const { data, error, isFetching } = useQuery<IApplication[]>({
     queryKey: ['todos'],
     initialData: [],
     queryFn: () =>
@@ -27,9 +27,9 @@ const Applications = () => {
   })
 
   const applicationData = useMemo(() => {
-    if (isLoading) return []
+    if (isFetching) return []
     return error || data.length == 0 ? applications : data
-  }, [error, data, isLoading])
+  }, [error, data, isFetching])
 
   return (
     <Flex as="main" alignItems="center">
@@ -44,7 +44,7 @@ const Applications = () => {
           >
             Applications
           </Text>
-          {isLoading && (
+          {isFetching && (
             <Center>
               <CircularProgress isIndeterminate />
             </Center>

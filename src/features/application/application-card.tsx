@@ -19,8 +19,8 @@ export const ApplicationCard: FC<ApplicationCardProps> = ({
       onClick={onClick}
       cursor="pointer"
       borderRadius="md"
-      margin="1rem" 
-      width={300} 
+      margin="1rem"
+      width={300}
       _hover={{
         bg: 'gray.200',
         boxShadow: 'lg',
@@ -30,7 +30,9 @@ export const ApplicationCard: FC<ApplicationCardProps> = ({
         <CardBody>
           <Stack divider={<StackDivider />} spacing="2">
             <Box>
-              <Heading size="md"> {jobOffer?.title}</Heading>
+              <Heading size="md" minH={12}>
+                {jobOffer?.title}
+              </Heading>
               <Text pt="1" fontSize="sm">
                 {jobOffer?.company}
               </Text>
