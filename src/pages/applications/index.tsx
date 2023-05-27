@@ -1,5 +1,12 @@
 import { ApplicationList } from '@/features/application'
-import { Container, Text, Flex, Stack } from '@chakra-ui/react'
+import {
+  Container,
+  Text,
+  Flex,
+  Stack,
+  CircularProgress,
+  Center,
+} from '@chakra-ui/react'
 import { useQuery } from '@tanstack/react-query'
 
 import { IApplication } from '@/types/application'
@@ -7,7 +14,7 @@ import { applications } from '@/mocks/applications.mock'
 import { useMemo } from 'react'
 
 const Applications = () => {
-  const { data, error } = useQuery<IApplication[]>({
+  const { data, error, isLoading } = useQuery<IApplication[]>({
     queryKey: ['todos'],
     initialData: [],
     queryFn: () =>
@@ -19,10 +26,10 @@ const Applications = () => {
       }),
   })
 
-  const applicationData = useMemo(
-    () => (error || data.length == 0 ? applications : data),
-    [error, data],
-  )
+  const applicationData = useMemo(() => {
+    if (isLoading) return []
+    return error || data.length == 0 ? applications : data
+  }, [error, data, isLoading])
 
   return (
     <Flex as="main" alignItems="center">
@@ -37,6 +44,11 @@ const Applications = () => {
           >
             Applications
           </Text>
+          {isLoading && (
+            <Center>
+              <CircularProgress isIndeterminate />
+            </Center>
+          )}
           <ApplicationList applicationList={applicationData} />
         </Stack>
       </Container>
