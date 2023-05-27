@@ -19,8 +19,8 @@ export const ApplicationCard: FC<ApplicationCardProps> = ({
       onClick={onClick}
       cursor="pointer"
       borderRadius="md"
-      margin="1rem"
-      width={300}
+      margin="1rem" 
+      width={300} 
       _hover={{
         bg: 'gray.200',
         boxShadow: 'lg',
