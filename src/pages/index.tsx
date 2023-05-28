@@ -1,50 +1,98 @@
-import { ProfileCard } from '@/features/auth'
-import { Container, Text, Flex, Stack, Button } from '@chakra-ui/react'
-import { signIn, signOut, useSession } from 'next-auth/react'
+import { ArrowForwardIcon } from '@chakra-ui/icons'
+import {
+  Text,
+  Stack,
+  Button,
+  Grid,
+  GridItem,
+  Heading,
+  HStack,
+} from '@chakra-ui/react'
+import { signIn, useSession } from 'next-auth/react'
+import Image from 'next/image'
+import { useRouter } from 'next/router'
 
 const Home = () => {
   const { data: session } = useSession()
 
+  const router = useRouter()
+
   return (
-    <Flex as="main" alignItems="center" minHeight="100vh">
-      <Container maxW="container.xl" centerContent>
-        <Stack spacing={8}>
+    <Grid
+      templateColumns="repeat(12, 1fr)"
+      columnGap={{ base: 0, lg: 24 }}
+      paddingX={{ base: 4, lg: 16 }}
+      minHeight={{ lg: '100vh' }}
+      overflowX="hidden"
+    >
+      <GridItem
+        colSpan={{ base: 12, lg: 6 }}
+        display="flex"
+        alignItems="center"
+      >
+        <Stack spacing={6} align="start" paddingTop={52} paddingBottom={48}>
           <Stack spacing={2}>
-            <Text
-              fontSize="3xl"
-              textAlign="center"
-              fontWeight="light"
-              color="gray.900"
-            >
-              InfoJobs
-            </Text>
-            <Text textAlign="center" color="gray.500">
-              Made with &#x1F49B; and Javascript
+            <Heading>
+              El control total de tu proceso de postulación ahora en tus manos.
+            </Heading>
+            <Text fontSize="sm" textColor="gray.600" lineHeight="tall">
+              Con JobProgress, dile adiós a la incertidumbre en la búsqueda de
+              empleo. Recibe actualizaciones en tiempo real sobre el estatus de
+              tus postulaciones. Además, obtén una idea clara de cuánto tiempo
+              puede tomar cada etapa del proceso de entrevista. ¡Toma decisiones
+              informadas y avanza con confianza hacia tu próximo rol con
+              JobProgress!
             </Text>
           </Stack>
-          <Stack spacing={4}>
-            {session?.user && <ProfileCard user={session.user} />}
+          <HStack>
             {session ? (
               <Button
+                colorScheme="twitter"
                 onClick={() => {
-                  signOut()
+                  router.push('/app/applications')
                 }}
               >
-                Sign Out
+                Lanzar aplicación
               </Button>
             ) : (
               <Button
+                colorScheme="twitter"
                 onClick={() => {
                   signIn('infojobs', { callbackUrl: '/app/applications' })
                 }}
               >
-                Sign In
+                Empezar
               </Button>
             )}
-          </Stack>
+            <Button
+              variant="ghost"
+              rightIcon={<ArrowForwardIcon />}
+              onClick={() => {
+                router.push(
+                  'https://github.com/starry-house/infojobs-hackathon',
+                )
+              }}
+            >
+              Leer más
+            </Button>
+          </HStack>
         </Stack>
-      </Container>
-    </Flex>
+      </GridItem>
+      <GridItem
+        colSpan={{ base: 12, lg: 6 }}
+        position="relative"
+        minHeight={{ base: 320, lg: 'auto' }}
+        marginRight={{ base: -4, lg: -20 }}
+        marginLeft={{ base: -4, lg: 0 }}
+      >
+        <Image
+          src="https://res.cloudinary.com/dmdfnfpma/image/upload/v1685292086/charlesdeluvio_e55zx5.jpg"
+          alt="Persona sentada en una silla frente a un hombre"
+          fill
+          style={{ objectFit: 'cover' }}
+        />
+      </GridItem>
+    </Grid>
   )
 }
 
