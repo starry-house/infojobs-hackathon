@@ -35,7 +35,7 @@ const Home = () => {
             ) : (
               <Button
                 onClick={() => {
-                  signIn('infojobs')
+                  signIn('infojobs', { callbackUrl: '/app/applications' })
                 }}
               >
                 Sign In
