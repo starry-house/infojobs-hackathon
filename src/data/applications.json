@@ -3,7 +3,7 @@
     "hasCoverLetter": false,
     "cv": "Jose",
     "stepLabel": "2/7",
-    "code": "25e51c3e-95b3-40be-8391-2df326c6fxxx",
+    "code": "14d760e5-c1f9-4969-9e7e-0ce3583cfb06",
     "date": "2020-05-22T10:30:48.000+0000",
     "rejected": false,
     "offerRemoved": false,
@@ -44,7 +44,7 @@
     "hasCoverLetter": false,
     "cv": "Jose",
     "stepLabel": "2/7",
-    "code": "25e51c3e-95b3-40be-8391-2df326c6fxxx",
+    "code": "7662c2b2-3ec8-43d9-97c4-1cd66f498f92",
     "date": "2020-05-22T10:30:48.000+0000",
     "rejected": false,
     "offerRemoved": false,
@@ -85,7 +85,7 @@
     "hasCoverLetter": false,
     "cv": "Jose",
     "stepLabel": "2/7",
-    "code": "25e51c3e-95b3-40be-8391-2df326c6fxxx",
+    "code": "1d404ffd-b0ff-490f-a47a-3568b560d2d0",
     "date": "2020-05-22T10:30:48.000+0000",
     "rejected": false,
     "offerRemoved": false,
@@ -104,19 +104,72 @@
     "steps": [
       {
         "current": false,
-        "title": "Prescreen with recluiter",
+        "title": "Complete online application form",
         "subtitle": "10/02/23",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quibusdam consectetur numquam saepe voluptas quaerat, deleniti quidem aperiam ad quos sint nesciunt molestias nemo iusto necessitatibus, repellat aut dignissimos. Eum"
       },
       {
         "current": false,
-        "title": "Technical phone interview",
+        "title": "Initial phone screening",
         "subtitle": "20/02/23",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quibusdam consectetur numquam saepe voluptas quaerat, deleniti quidem aperiam ad quos sint nesciunt molestias nemo iusto necessitatibus, repellat aut dignissimos. Eum"
       },
       {
         "current": true,
-        "title": "On-Site Interview",
+        "title": "In-person interview with team members",
+        "subtitle": "25/02/23",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quibusdam consectetur numquam saepe voluptas quaerat, deleniti quidem aperiam ad quos sint nesciunt molestias nemo iusto necessitatibus, repellat aut dignissimos. Eum"
+      },
+      {
+        "current": true,
+        "title": "Final interview with department head",
+        "subtitle": "25/02/23",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quibusdam consectetur numquam saepe voluptas quaerat, deleniti quidem aperiam ad quos sint nesciunt molestias nemo iusto necessitatibus, repellat aut dignissimos. Eum"
+      }
+    ]
+  },
+  {
+    "hasCoverLetter": false,
+    "cv": "Jose",
+    "stepLabel": "2/7",
+    "code": "0a7f0a2e-27f0-4a22-aba3-29d0edb5a3bd",
+    "date": "2020-05-22T10:30:48.000+0000",
+    "rejected": false,
+    "offerRemoved": false,
+    "processClosed": false,
+    "jobOffer": {
+      "title": "Ingeriero de Software con Ruso",
+      "company": "Ingeniería Fernández",
+      "city": "Terradillos De Esgueva",
+      "code": "793313858f4fcaac90e5ac9622cxxx",
+      "applications": 2,
+      "province": {
+        "id": 10,
+        "value": "Burgos"
+      }
+    },
+    "steps": [
+      {
+        "current": true,
+        "title": "Submit online application",
+        "subtitle": "25/02/23",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quibusdam consectetur numquam saepe voluptas quaerat, deleniti quidem aperiam ad quos sint nesciunt molestias nemo iusto necessitatibus, repellat aut dignissimos. Eum"
+      },
+      {
+        "current": false,
+        "title": "Phone screening interview",
+        "subtitle": "10/02/23",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quibusdam consectetur numquam saepe voluptas quaerat, deleniti quidem aperiam ad quos sint nesciunt molestias nemo iusto necessitatibus, repellat aut dignissimos. Eum"
+      },
+      {
+        "current": false,
+        "title": "Interview with hiring manager",
+        "subtitle": "20/02/23",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quibusdam consectetur numquam saepe voluptas quaerat, deleniti quidem aperiam ad quos sint nesciunt molestias nemo iusto necessitatibus, repellat aut dignissimos. Eum"
+      },
+      {
+        "current": true,
+        "title": "Interview with technical lead",
         "subtitle": "25/02/23",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quibusdam consectetur numquam saepe voluptas quaerat, deleniti quidem aperiam ad quos sint nesciunt molestias nemo iusto necessitatibus, repellat aut dignissimos. Eum"
       }
