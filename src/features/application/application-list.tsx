@@ -13,7 +13,7 @@ export const ApplicationList: FC<ApplicationListProps> = ({
 }) => {
   const router = useRouter()
   const handleOnClick = (code: string) => {
-    router.push(`/applications/${code}`)
+    router.push(`/app/applications/${code}`)
   }
 
   return (
