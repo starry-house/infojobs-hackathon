@@ -1,6 +1,8 @@
 # Infojobs
 
-One Paragraph of the project description
+Nowadays many of the selection processes are very uncertain, in most cases the candidates live the whole process with uncertainty, many times they are rejected and do not know the reason. Likewise, the companies don't have a control of the candidates and they have problems to manage their hiring processes.
+
+The objective of this project is to add a new functionality that allows recruiters and candidates to have feedback at all times of each of the phases of the process. For this, it's important that the vacancies include each of the phases of their process. Having the status of each application will reduce uncertainty, the candidate will have the necessary feedback that will be useful in the next processes and the companies will keep track of each of the candidates avoiding management problems in their processes.
 
 ## Getting Started
 
