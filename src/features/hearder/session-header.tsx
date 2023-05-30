@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-non-null-assertion */
 import {
   Avatar,
   Flex,
@@ -48,10 +49,7 @@ export const Header = () => {
                   </VStack>
                 </HStack>
               </MenuButton>
-              <MenuList
-                bg={useColorModeValue('white', 'gray.900')}
-                borderColor={useColorModeValue('gray.200', 'gray.700')}
-              >
+              <MenuList>
                 <MenuItem onClick={() => signOut({ callbackUrl: '/' })}>
                   Cerrar sessión
                 </MenuItem>
